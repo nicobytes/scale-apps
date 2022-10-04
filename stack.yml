@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  flask:
+    image: 'nicobytes/api-flask:latest'
+    ports:
+      - '8888:8888'
+    deploy:
+      mode: replicated
+      replicas: 1
+  express:
+    image: 'nicobytes/api-express:latest'
+    ports:
+      - '3000:3000'
+    deploy:
+      mode: replicated
+      replicas: 1
