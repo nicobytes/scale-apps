@@ -1,14 +1,14 @@
 version: '3.3'
 services:
   flask:
-    #image: 'nicobytes/api-flask:latest'
+    image: 'nicobytes/api-flask:latest'
     build:
       context: ./flask_app
       dockerfile: Dockerfile
     ports:
       - '8888:8888'
   express:
-    #image: 'nicobytes/api-express:latest'
+    image: 'nicobytes/api-express:latest'
     build:
       context: ./express_app
       dockerfile: Dockerfile
